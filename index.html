@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portifolio | Theo Andrade</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="menu">
+    <nav class="menu__links">
+      <a href="#sobre-mim">Sobre mim</a>
+      <a href="#educacao">Educação</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round" onclick="myFunction()"></span></span>
+</label>
+    <a class="btn-curriculo" href="Curriculo_Theo_Andrade_Silva.pdf (1).pdf" download="Curriculo Theo Andrade">
+      Currículo
+    </a>
+    
+  </header>
+<main class="apresentacao">
+  <div class="hero-texto">
+    <p class="ola">Olá! Eu sou o</p>
+    <h1><span class="nome">Theo<br>Andrade</span></h1>
+    <h2><span class="texto-rotativo"></span></h2>
+  </div>
+  <div class="hero-anim">
+    <canvas id="constelacao"></canvas>
+  </div>
+</main>
+<section  class="sobre-mim">
+ <h1 class="sobretxt" id="sobre-mim">Sobre mim</h1>
+ <div class="container" >
+  <p class="textosobre">
+    <span id="textin">
+      Oi! Sou o Theo, tenho 17 anos e nasci em Belo Horizonte, Minas Gerais. Estudo no Colégio Cotemig, onde desenvolvo habilidades técnicas em C#, bancos de dados, HTML, CSS, JavaScript e outras tecnologias.
+
+      Atuei em uma empresa especializada em agentes de automação com n8n, onde desenvolvia inteligências artificiais, realizava manutenções e criava prompts personalizados.
+      
+      Também trabalhei em uma empresa de suporte ao cliente, na qual era responsável pela venda de um sistema, além de prestar suporte completo durante a instalação e na resolução de eventuais problemas.
+    </span>
+
+    <img src="TheoSelfie.jpg" id="selfie">
+  </div>
+</section>
+
+<section class="educacao">
+  <h1 class="educacaotxt" id="educacao">Educação</h1>
+
+  <div class="linha-educacao">
+    <span id="cotemig">Cotemig</span>
+    <span class="periodo">Fev 2024 - Dez 2026 (previsão)</span>
+  </div>
+
+  <p class="descricao">Ensino Médio + Curso Técnico em Informática</p>
+</section>
+
+</section>
+
+<section class="experiencia">
+  <h1 class="experienciatxt" id="experiencia">Experiência profissional</h1>
+ 
+  <div class="linha-experiencia">
+    <span id="uaipdv">UAI PDV - ESTÁGIO</span>
+    <span class="periodo">Nov 2024 - Jul 2025 - Suporte ao Cliente</span>
+  </div>
+  <p class="infoexperiencia">Na UAIPDV, atuei com sistemas de PDV voltados para máquinas de cartão usadas em restaurantes, prestando suporte a clientes em diferentes etapas da jornada — desde interessados em nossos serviços até usuários já cadastrados. 
+
+    Entre minhas principais responsabilidades estavam o treinamento no uso da plataforma, a resolução de incidentes técnicos e a produção de materiais audiovisuais explicativos.
+     Ademais, tive meu primeiro contato com o n8n, no qual desenvolvi um agente de inteligência artificial integrado ao WhatsApp comercial, contribuindo para a automação de processos e melhoria na comunicação com os clientes.</p>
+
+
+<div class="thynkrsection">
+  <div class="linha-experiencia">
+    
+    <span id="thynkr">ThynkrAI - ESTÁGIO</span>
+    <span class="periodothynkr">Nov 2024 - Jul 2025 - Suporte ao Cliente</span>
+  </div>
+  <p class="infoexperienciathynkr">Atuei como estagiário de Suporte Técnico e Automação, com foco em fluxos de automação usando n8n e inteligência artificial. Prestei suporte a clientes, auxiliando na configuração e manutenção de agentes de IA, além de realizar ajustes em prompts para melhorar a precisão das respostas. Também colaborei no diagnóstico de erros, testes de funcionamento e otimização de fluxos automatizados.
+</section>
+</div>
+
+
+<section class="habilidades">
+  <h1 class="habilidadestxt" id="habilidades">Habilidades</h1>
+  
+  <div class="habilidades-grid">
+    
+
+    <div class="habilidade-card" data-modal="modal-html-css">
+      <h3 class="card-title">Conhecimento HTML e CSS</h3>
+    </div>
+
+    <div class="habilidade-card" data-modal="modal-office">
+      <h3 class="card-title">Pacote Office</h3>
+    </div>
+
+    <div class="habilidade-card" data-modal="modal-n8n">
+      <h3 class="card-title">Automação com n8n</h3>
+    </div>
+
+  
+
+    <div class="habilidade-card" data-modal="modal-documentacao">
+      <h3 class="card-title">Documentação de Processos</h3>
+    </div>
+
+    
+
+    <div class="habilidade-card" data-modal="modal-ia-testes">
+      <h3 class="card-title">Testes e Ajustes de Agentes de IA</h3>
+    </div>
+
+      <div class="habilidade-card" data-modal="modal-workspace">
+      <h3 class="card-title">Google Workspace</h3>
+    </div>
+
+    <div class="habilidade-card" data-modal="modal-pdv">
+      <h3 class="card-title">Suporte a Sistemas de PDV</h3>
+    </div>
+  </div>
+
+</section>
+
+<div id="modal-carrossel" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Carrossel de Fotos que Muda quando Clica</h2>
+    <p>Esta habilidade demonstra minha capacidade de criar componentes interativos de front-end usando <strong>HTML, CSS e JavaScript</strong> puro. O carrossel, quando implementado, permite a navegação visual e fluida entre diferentes itens, como projetos ou imagens, melhorando a experiência do usuário.</p>
+    <p><strong>Exemplo de Aplicação:</strong> Implementação de galeria de projetos no portfólio.</p>
+  </div>
+</div>
+
+<div id="modal-html-css" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Conhecimento em HTML e CSS</h2>
+    <p>Sólidos fundamentos na estruturação de páginas web com <strong>HTML5</strong> e na estilização e criação de layouts responsivos com <strong>CSS3</strong>. Isso inclui o uso de Flexbox, Grid Layout, e a criação de designs que se adaptam a diferentes dispositivos (Mobile First).</p>
+    <p><strong>Nível de Domínio:</strong> Intermediário-Avançado.</p>
+  </div>
+</div>
+
+<div id="modal-office" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Pacote Office</h2>
+    <p>Domínio em ferramentas de produtividade como <strong>Microsoft Word</strong>, para criação de documentos, relatórios e manuais; <strong>Excel</strong>, para gerenciamento de dados, planilhas, fórmulas e análises básicas; e <strong>PowerPoint</strong>, para apresentações profissionais e didáticas.</p>
+  </div>
+</div>
+
+<div id="modal-n8n" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Automação com n8n</h2>
+    <p>Experiência na criação e manutenção de fluxos de trabalho (workflows) automatizados utilizando a plataforma <strong>n8n</strong>. Capacidade de integrar diferentes APIs e serviços, como WhatsApp, CRMs e bancos de dados, para otimizar processos internos e comunicação com o cliente.</p>
+    <p><strong>Experiência:</strong> Utilizado no estágio na ThynkrAI para agentes de IA e na UAI PDV para comunicação com clientes.</p>
+  </div>
+</div>
+
+<div id="modal-workspace" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Google Workspace</h2>
+    <p>Proficiência no uso das ferramentas de colaboração do Google, incluindo <strong>Docs</strong>, <strong>Sheets</strong> (para planilhas e análises), <strong>Slides</strong> e, principalmente, <strong>Gmail</strong> e <strong>Drive</strong> para organização de arquivos e comunicação eficaz em equipe.</p>
+  </div>
+</div>
+
+
+<div id="modal-documentacao" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Documentação de Processos</h2>
+    <p>Habilidade em mapear, descrever e formalizar processos operacionais, técnicos e de suporte. Criação de manuais, *step-by-step* e FAQs para garantir a padronização, facilitar o treinamento e a transferência de conhecimento dentro da equipe.</p>
+  </div>
+</div>
+
+<div id="modal-pdv" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Suporte a Sistemas de PDV (Ponto de Venda)</h2>
+    <p>Experiência em fornecer suporte técnico de primeiro e segundo nível para sistemas de Ponto de Venda, focado em soluções para o setor de máquinas de cartão e restaurantes. Envolve diagnóstico de erros, configuração remota e treinamento de usuários.</p>
+  </div>
+</div>
+
+<div id="modal-ia-testes" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Testes e Ajustes de Agentes de IA</h2>
+    <p>Experiência em testar e validar o funcionamento e a precisão de agentes de Inteligência Artificial, principalmente aqueles integrados via n8n e plataformas de chatbot. Habilidade em refinar e ajustar *prompts* para melhorar a qualidade e relevância das respostas da IA.</p>
+    <p><strong>Foco:</strong> Chatbots de atendimento e automação de comunicação.</p>
+  </div>
+</div>
+
+<div id="modal-ia-ajustes" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Testes e Ajustes de Agentes de IA (Reforço)</h2>
+    <p>Esta repetição enfatiza a importância dessa habilidade. Demonstra a dedicação em garantir que as soluções de IA sejam robustas, precisas e atendam aos objetivos do negócio, realizando testes de regressão e performance.</p>
+  </div>
+</div>
+
+<section class="projetos" id="projetos">
+  <h1 class="projetostxt">Projetos</h1>
+
+  <div class="projetos-grid">
+    <a href="https://andradeksx.github.io/OffSide" target="_blank" class="projeto-card">
+      <img src="cortez.jpeg" alt="Projeto Offside">
+      <div class="projeto-info">
+        <h3>OFFSIDE</h3>
+        <p>Site sobre moda streetwear, desenvolvido com HTML, CSS e JS puro.</p>
+      </div>
+    </a>
+
+    <a href="https://andradeksx.github.io/Recria-oSite" target="_blank" class="projeto-card">
+      <img src="blog3.jpg" alt="Projeto Belara">
+      <div class="projeto-info">
+        <h3>BELARA</h3>
+        <p>Recriação moderna de um site comercial com foco em design responsivo.</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="github-link">
+    <a href="https://github.com/AndradekSx" target="_blank">
+     
+      <button class="btn-github">VEJA MAIS NO MEU GITHUB</button>
+    </a>
+  </div>
+</section>
+
+
+<section class="contato" id="contato">
+  <h1 class="contatotxt">ENTRE EM CONTATO</h1>
+
+  <form class="contato-form" id="form-contato">
+    <div class="input-row">
+      <div class="input-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Seu nome..." required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Seu email..." required>
+      </div>
+    </div>
+
+    <div class="input-group full">
+      <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem.." required></textarea>
+    </div>
+
+    <button type="submit" class="btn-enviar">Enviar</button>
+  </form>
+
+  <div class="contato-info">
+    <p>ou</p>
+    <p>📞 <strong>(31)97359-1394</strong></p>
+  </div>
+</section>
+
+
+
+
+
+
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-texto">
+      <h3>© 2025 Theo Andrade</h3>
+      <p>Desenvolvido com 💻 e ☕</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/theo-andrade-silva" target="_blank">LinkedIn</a>
+      <a href="mailto:andradetheopessoal@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
