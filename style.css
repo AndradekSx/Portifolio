@@ -715,3 +715,193 @@ input:checked + .slider:before { transform: translateX(26px); }
   color: var(--textosecundario);
   font-weight: 600;
 }
+
+/* --- RESPONSIVIDADE GERAL --- */
+@media (max-width: 1024px) {
+  .menu__links a {
+    font-size: 20px;
+  }
+  .apresentacao {
+    flex-direction: column;
+    padding: 100px 20px 50px;
+    text-align: center;
+  }
+  .hero-anim {
+    width: 100%;
+    height: 300px;
+  }
+  .hero-texto h1 {
+    font-size: 60px;
+  }
+  .hero-texto p.ola {
+    font-size: 32px;
+  }
+  .apresentacao h2 {
+    font-size: 26px;
+  }
+}
+
+/* --- TABLETS E CELULARES --- */
+@media (max-width: 768px) {
+
+  /* MENU */
+  .menu {
+    flex-direction: column;
+    padding: 12px;
+    gap: 10px;
+  }
+  .menu__links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+  .menu__links a {
+    font-size: 18px;
+  }
+  .btn-curriculo {
+    font-size: 18px;
+    padding: 4px 10px;
+  }
+
+  /* HERO */
+  .apresentacao {
+    flex-direction: column;
+    padding: 80px 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-texto {
+    flex: 1;
+  }
+  .hero-texto h1 {
+    font-size: 50px;
+  }
+  .hero-texto p.ola {
+    font-size: 28px;
+  }
+  .apresentacao h2 {
+    font-size: 22px;
+  }
+  .hero-anim {
+    height: 260px;
+  }
+
+  /* SOBRE MIM */
+  .textosobre {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: left;
+    font-size: 18px;
+  }
+  #selfie {
+    width: 100%;
+    height: auto;
+    margin: 20px 0 0;
+  }
+
+  /* EDUCAÇÃO */
+  .educacao {
+    padding: 120px 20px;
+    height: auto;
+  }
+  #cotemig {
+    font-size: 34px;
+  }
+  .periodo {
+    font-size: 20px;
+  }
+
+  /* EXPERIÊNCIA */
+  .experiencia {
+    padding: 120px 20px;
+    height: auto;
+  }
+  #uaipdv, #thynkr {
+    font-size: 32px;
+  }
+  .infoexperiencia, .infoexperienciathynkr {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .periodothynkr, .periodo {
+    font-size: 18px;
+  }
+
+  /* HABILIDADES */
+  .habilidades {
+    padding: 120px 20px;
+    height: auto;
+  }
+  .habilidadestxt {
+    text-align: center;
+    font-size: 34px;
+  }
+  .habilidades-grid {
+    grid-template-columns: 1fr;
+    padding: 30px 10px;
+  }
+
+  /* PROJETOS */
+  .projetos {
+    padding: 100px 20px;
+  }
+  .projetostxt {
+    font-size: 34px;
+    text-align: center;
+  }
+  .projeto-card {
+    width: 100%;
+  }
+
+  /* CONTATO */
+  .contato {
+    padding: 60px 20px;
+    margin: 80px 20px;
+  }
+  .input-row {
+    flex-direction: column;
+  }
+  .input-group {
+    width: 100%;
+  }
+  .btn-enviar {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 30px 15px;
+  }
+  .footer-texto h3 {
+    font-size: 18px;
+  }
+  .footer-links a {
+    font-size: 16px;
+  }
+}
+
+/* --- CELULARES PEQUENOS --- */
+@media (max-width: 480px) {
+  .menu__links a {
+    font-size: 16px;
+  }
+  .hero-texto h1 {
+    font-size: 42px;
+  }
+  .hero-texto p.ola {
+    font-size: 22px;
+  }
+  .apresentacao h2 {
+    font-size: 20px;
+  }
+  .textosobre {
+    font-size: 16px;
+  }
+  .habilidadestxt, .projetostxt, .contatotxt {
+    font-size: 28px;
+  }
+  .btn-github {
+    width: 100%;
+  }
+}
